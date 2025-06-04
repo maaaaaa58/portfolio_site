@@ -1,0 +1,207 @@
+#profile main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#profile main h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-block: 5rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#profile main .profileTop {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#profile main .profileTop .profileImg {
+    max-width: 350px;
+}
+
+#profile main .profileTop .profileImg img {
+    flex-basis: 40%;
+}
+
+#profile main .profileTop .profileText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#profile main .profileTop .profileText p {
+    line-height: 1.8;
+}
+
+#profile main .profileTop .profileText span {
+    font-size: 2rem;
+}
+
+/* ここからスキル */
+
+#profile main .skillSec {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+main .skillSec h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#profile main .skillSec ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#profile main .skillSec ul li img {
+    width: 120px;
+}
+
+#profile main .skillSec p {
+    text-align: center;
+}
+
+/* ここから強み */
+
+#profile main .strengthSec {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#profile main .strengthSec h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#profile main .strengthSec .strengthText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 3rem;
+}
+
+#profile main .strengthSec .strengthText h3 {
+    width: 280px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--mainColor);
+    border-radius: 4rem;
+}
+
+/* ここから趣味 */
+
+#profile main .likeitSec {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#profile main .likeitSec h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#profile main .likeitSec .likeitText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 3rem;
+}
+
+#profile main .likeitSec .likeitText h3 {
+    width: 280px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--mainColor);
+    border-radius: 4rem;
+}
+
+#profile main .backTop {
+    font-size: 1.5rem;
+    margin-block: 5rem;
+    text-align: center;
+}
+
+/* ここからスマホ版メディアクエリ */
+
+@media screen and (max-width: 768px) {
+
+    #profile main h1 {
+        font-size: 2rem;
+        margin-inline: 1rem;
+    }
+
+    #profile main .profileTop {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1rem;
+        gap: 1rem;
+        border-bottom: 1px solid var(--mainColor);
+    }
+
+    /* ここからスキル */
+
+    #profile main .skillSec {
+        margin-inline: 1rem;
+    }
+
+
+    main .skillSec h2 {
+        font-size: 1.8rem;
+    }
+
+    #profile main .skillSec p {
+        font-size: 0.8rem;
+    }
+
+    /* ここから強み */
+
+    #profile main .strengthSec {
+        margin: 0 1rem;
+    }
+
+    #profile main .strengthSec h2 {
+        font-size: 1.8rem;
+    }
+
+    #profile main .strengthSec .strengthText h3 {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    /* ここから趣味 */
+
+    #profile main .likeitSec {
+        margin: 0 1rem;
+    }
+
+    #profile main .likeitSec h2 {
+        font-size: 1.8rem;
+    }
+
+    #profile main .likeitSec .likeitText h3 {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    #profile main .backTop {
+        font-size: 1.2rem;
+    }
+
+}

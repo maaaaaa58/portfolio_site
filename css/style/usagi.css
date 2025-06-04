@@ -1,0 +1,227 @@
+#usagi main .usagiSec01 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#usagi main .usagiSec01 .usagiPcimg {
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#usagi main .usagiSec01 .usagiTextwrap1 {
+    max-width: 800px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap1 h1 {
+    font-size: 3rem;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap1 a {
+    align-self: center;
+}
+
+/* ここからテキストエリア上 */
+
+#usagi main .usagiSec01 .usagiTextwrapper {
+    max-width: 1000px;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 dl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 dl dt {
+    flex-basis: 20%;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 dl dd {
+    flex-basis: 70%;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 .colorBoxwrap {
+    display: flex;
+    gap: 2rem;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 .colorBoxwrap .colorBox1 {
+    width: 50px;
+    height: 50px;
+    background-color: #FEF8F0;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 .colorBoxwrap .colorBox2 {
+    width: 50px;
+    height: 50px;
+    background-color: #142D51;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 .colorBoxwrap .colorBox3 {
+    width: 50px;
+    height: 50px;
+    background-color: #DE7E11;
+}
+
+#usagi main .usagiSec01 .usagiTextwrap2 .colorBoxwrap .colorBox4 {
+    width: 50px;
+    height: 50px;
+    background-color: #885C31;
+}
+
+/* ページ中央画像 */
+
+#usagi main .usagiSec01 .usagImg {
+    background-image: url(../../image/usagi_sento_01.png);
+    aspect-ratio: 16/9;
+    background-size: cover;
+    margin-block: 3rem;
+    border: 1px solid var(--mainColor);
+}
+
+/* ここからテキストエリア下 */
+
+#usagi main .usagiSec01 .usagiTextwrapper2 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    border-block: 1px solid var(--mainColor);
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText .usagiImg1 img {
+    width: 500px;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 .usagiImg1 img {
+    width: 400px;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText dl {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 1rem;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 dl {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 350px;
+    gap: 1rem;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText dl dt {
+    font-size: 1.5rem;
+}
+
+#usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 dl dt {
+    font-size: 1.5rem;
+}
+
+#usagi main .backTop {
+    font-size: 1.5rem;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    border-top: 1px solid var(--mainColor);
+}
+
+@media screen and (max-width: 768px) {
+    #usagi main .usagiSec01 .usagiPcimg {
+        margin: 8rem 1rem 0;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrap1 {
+        flex-direction: column;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrap1 h1 {
+        font-size: 1.5rem;
+        margin-inline: 2rem;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrap1 a {
+        align-self: self-start;
+        margin-inline: 2rem;
+    }
+
+    /* ここからテキストエリア上 */
+
+    #usagi main .usagiSec01 .usagiTextwrapper {
+        margin-inline: 1rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid var(--mainColor);
+    }
+
+
+    #usagi main .usagiSec01 .usagiTextwrap2 {
+        width: auto;
+        margin-inline: 2rem;
+    }
+
+
+    #usagi main .usagiSec01 .usagiTextwrap2 dl {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrap2 dl dt {
+        margin-bottom: 1rem;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrap2 dl dd {
+        margin-bottom: 2rem;
+    }
+
+    /* ここからテキストエリア下 */
+
+    #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText .usagiImg1 img {
+        margin-bottom: 1rem;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 .usagiImg1 img {
+        margin-bottom: 1rem;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText {
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 {
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    #usagi main .backTop {
+        font-size: 1.2rem;
+        margin-inline: 1rem;
+    }
+
+
+}

@@ -1,0 +1,16 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --backGroundColor: #F9F9F9;
+    --mainColor: #FF6111;
+}
+
+body {
+    font-family: "Marcellus", "Zen Kaku Gothic Antique", serif;
+    color: var(--mainColor);
+    background-color: var(--backGroundColor);
+    line-height: 1.8;
+}
