@@ -113,10 +113,12 @@
 
 #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText .usagiImg1 img {
     width: 500px;
+    border: 1px solid var(--mainColor);
 }
 
 #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText1 .usagiImg1 img {
     width: 400px;
+    border: 1px solid var(--mainColor);
 }
 
 #usagi main .usagiSec01 .usagiTextwrapper2 .usagiText dl {

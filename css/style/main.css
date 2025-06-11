@@ -458,7 +458,7 @@ main .bannerWrapper .bannerLink .sample2-2::after {
 
     header #drawerButton .bar {
         height: 4px;
-        width: 100%;
+        width: 30px;
         background-color: var(--mainColor);
         transition: transform 0.3s ease, opacity 0.3s ease;
         margin-bottom: 5px;
@@ -496,7 +496,6 @@ main .bannerWrapper .bannerLink .sample2-2::after {
 
     header nav ul.open {
         top: 0;
-        width: 100%;
     }
 
     /* ハンバーガーメニューはここまで */
@@ -576,5 +575,13 @@ main .bannerWrapper .bannerLink .sample2-2::after {
     main .workSec .streaSec p {
         font-size: 0.9rem;
     }
+
+    /* ここからバナー */
+
+    main .bannerWrapper {
+        margin: 0 1rem;
+
+    }
+
 
 }
