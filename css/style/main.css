@@ -580,7 +580,10 @@ main .bannerWrapper .bannerLink .sample2-2::after {
 
     main .bannerWrapper {
         margin: 0 1rem;
+    }
 
+    main .bannerWrapper .bannerSec .bannerImgsec {
+        margin: 0 1rem;
     }
 
 
