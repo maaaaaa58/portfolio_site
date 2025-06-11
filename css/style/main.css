@@ -13,6 +13,7 @@ header nav ul {
     position: fixed;
     top: 0;
     right: 10%;
+    z-index: 1000;
 }
 
 header nav ul li {
@@ -58,10 +59,26 @@ main .profileSec .profileWrap {
     justify-content: space-between;
 }
 
+/* ここからプロフィール画像 */
+
 main .profileSec .profileWrap .profileImg {
     flex-basis: 40%;
     border: 1px solid var(--mainColor);
 }
+
+main .profileSec .profileWrap .profileImg .scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+main .profileSec .profileWrap .profileImg .scroll-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ここからプロフィールテキスト */
+
 
 main .profileSec .profileWrap .profileText {
     flex-basis: 45%;
@@ -158,6 +175,17 @@ main .workSec .usagiSec .workName2 {
 
 main .workSec .usagiSec .workName2 img {
     margin: 0 auto;
+}
+
+main .workSec .usagiSec .workName2 img .scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+main .workSec .usagiSec .workName2 img .scroll-image.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 main .workSec .usagiSec .workLink {
@@ -277,6 +305,134 @@ main .workSec .streaSec .sample2-2::after {
     border-right: 2px solid var(--mainColor);
 }
 
+/* スクロールしたら画像が下から表示される */
+
+.scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* h1タイプライターカーソルのスタイル */
+
+.typing::after {
+    content: '|';
+    animation: blink 0.7s step-start infinite;
+    margin-left: 2px;
+    color: currentColor;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ここからバナー */
+
+main .bannerWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--mainColor);
+    border-radius: 2rem;
+    padding-bottom: 5rem;
+}
+
+main .bannerWrapper h5 {
+    color: var(--backGroundColor);
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 4rem;
+    padding-top: 3rem;
+}
+
+main .bannerWrapper .bannerSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+
+main .bannerWrapper .bannerSec .bannerImgsec {
+    width: 400px;
+    padding: 1rem;
+    background-color: var(--backGroundColor);
+}
+
+main .bannerWrapper .bannerSec p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+main .bannerWrapper .bannerSec ul {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+main .bannerWrapper .bannerSec ul li {
+    padding: 0 0.5rem;
+    border: 1px solid var(--mainColor);
+    border-radius: 1rem;
+}
+
+main .bannerWrapper .bannerLink {
+    color: var(--backGroundColor);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* 矢印CSS */
+
+main .bannerWrapper .bannerLink .arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main .bannerWrapper .bannerLink .arrow::before,
+main .bannerWrapper .bannerLink .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+
+main .bannerWrapper .bannerLink .sample2-2::before {
+    width: 12px;
+    height: 2px;
+    background: var(--backGroundColor);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+main .bannerWrapper .bannerLink .sample2-2::after {
+    left: 3px;
+    width: 8px;
+    height: 10px;
+    border-top: 2px solid var(--backGroundColor);
+    border-right: 2px solid var(--backGroundColor);
+}
+
+
+/* ここからフライヤー */
+
+
+
 
 /* ここからメディアクエリ */
 
@@ -340,6 +496,7 @@ main .workSec .streaSec .sample2-2::after {
 
     header nav ul.open {
         top: 0;
+        width: 100%;
     }
 
     /* ハンバーガーメニューはここまで */

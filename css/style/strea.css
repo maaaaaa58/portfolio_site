@@ -1,0 +1,226 @@
+#strea main .streaSec01 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#strea main .streaSec01 .streaPcimg {
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#strea main .streaSec01 .streaTextwrap1 {
+    max-width: 800px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#strea main .streaSec01 .streaTextwrap1 h1 {
+    font-size: 3rem;
+}
+
+#strea main .streaSec01 .streaTextwrap1 a {
+    align-self: center;
+}
+
+/* ここからテキストエリア上 */
+
+#strea main .streaSec01 .streaTextwrapper {
+    max-width: 1000px;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+#strea main .streaSec01 .streaTextwrap2 {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#strea main .streaSec01 .streaTextwrap2 dl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#strea main .streaSec01 .streaTextwrap2 dl dt {
+    flex-basis: 20%;
+}
+
+#strea main .streaSec01 .streaTextwrap2 dl dd {
+    flex-basis: 70%;
+}
+
+#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap {
+    display: flex;
+    gap: 2rem;
+}
+
+#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox1 {
+    width: 50px;
+    height: 50px;
+    background-color: #FEF8F0;
+}
+
+#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox2 {
+    width: 50px;
+    height: 50px;
+    background-color: #142D51;
+}
+
+#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox3 {
+    width: 50px;
+    height: 50px;
+    background-color: #DE7E11;
+}
+
+#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox4 {
+    width: 50px;
+    height: 50px;
+    background-color: #885C31;
+}
+
+/* ページ中央画像 */
+
+#strea main .streaSec01 .streaImg {
+    background-image: url(../../image/usagi_sento_01.png);
+    aspect-ratio: 16/9;
+    background-size: cover;
+    margin-block: 3rem;
+    border: 1px solid var(--mainColor);
+}
+
+/* ここからテキストエリア下 */
+
+#strea main .streaSec01 .streaTextwrapper2 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    border-block: 1px solid var(--mainColor);
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText .streaImg1 img {
+    width: 500px;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText1 .streaImg1 img {
+    width: 400px;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText dl {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 350px;
+    gap: 1rem;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText1 dl {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 350px;
+    gap: 1rem;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText dl dt {
+    font-size: 1.5rem;
+}
+
+#strea main .streaSec01 .streaTextwrapper2 .streaText1 dl dt {
+    font-size: 1.5rem;
+}
+
+#strea main .backTop {
+    font-size: 1.5rem;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    /* border-top: 1px solid var(--mainColor); */
+}
+
+@media screen and (max-width: 768px) {
+    #strea main .streaSec01 .streaPcimg {
+        margin: 8rem 1rem 0;
+    }
+
+    #strea main .streaSec01 .streaTextwrap1 {
+        flex-direction: column;
+    }
+
+    #strea main .streaSec01 .streaTextwrap1 h1 {
+        font-size: 1.5rem;
+        margin-inline: 2rem;
+    }
+
+    #strea main .streaSec01 .streaTextwrap1 a {
+        align-self: self-start;
+        margin-inline: 2rem;
+    }
+
+    /* ここからテキストエリア上 */
+
+    #strea main .streaSec01 .streaTextwrapper {
+        margin-inline: 1rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid var(--mainColor);
+    }
+
+
+    #strea main .streaSec01 .streaTextwrap2 {
+        width: auto;
+        margin-inline: 2rem;
+    }
+
+
+    #strea main .streaSec01 .streaTextwrap2 dl {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    #strea main .streaSec01 .streaTextwrap2 dl dt {
+        margin-bottom: 1rem;
+    }
+
+    #strea main .streaSec01 .streaTextwrap2 dl dd {
+        margin-bottom: 2rem;
+    }
+
+    /* ここからテキストエリア下 */
+
+    #strea main .streaSec01 .streaTextwrap2 .streaText .streaImg1 img {
+        margin-bottom: 1rem;
+    }
+
+    #strea main .streaSec01 .streaTextwrap2 .streaText1 .streaImg1 img {
+        margin-bottom: 1rem;
+    }
+
+    #strea main .streaSec01 .streaTextwrap2 .streaText {
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    #strea main .streaSec01 .streaTextwrap2 .streaText1 {
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    #strea main .backTop {
+        font-size: 1.2rem;
+        margin-inline: 1rem;
+    }
+}
