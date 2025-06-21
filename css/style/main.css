@@ -43,6 +43,7 @@ header .header_name p {
 /* ここからプロフィール */
 
 main .profileSec {
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -57,6 +58,7 @@ main .profileSec .profileWrap {
     margin: 0 auto 5rem;
     display: flex;
     justify-content: space-between;
+
 }
 
 /* ここからプロフィール画像 */
@@ -155,6 +157,7 @@ main .workSec h3 {
 main .workSec .usagiSec .workName ul {
     display: flex;
     gap: 1rem;
+    margin-top: 5rem;
 }
 
 main .workSec .usagiSec .workName ul li {
@@ -386,6 +389,7 @@ main .bannerWrapper .bannerLink {
     color: var(--backGroundColor);
     text-align: center;
     margin-top: 4rem;
+
 }
 
 /* 矢印CSS */
@@ -432,7 +436,18 @@ main .bannerWrapper .bannerLink .sample2-2::after {
 /* ここからフライヤー */
 
 
+/* ここからフッター */
 
+footer{
+    max-width: 850px;
+    margin: 5rem auto 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer small{
+    align-self: flex-end;
+}
 
 /* ここからメディアクエリ */
 
@@ -583,7 +598,14 @@ main .bannerWrapper .bannerLink .sample2-2::after {
     }
 
     main .bannerWrapper .bannerSec .bannerImgsec {
+        width: 300px;
         margin: 0 1rem;
+    }
+
+    /* ここからフッター */
+
+    footer{
+        margin: 4rem 2rem 2rem;
     }
 
 

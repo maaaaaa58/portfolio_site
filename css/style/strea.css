@@ -32,49 +32,49 @@
     border-bottom: 1px solid var(--mainColor);
 }
 
-#strea main .streaSec01 .streaTextwrap2 {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 {
     width: 750px;
     margin: 0 auto;
 }
 
-#strea main .streaSec01 .streaTextwrap2 dl {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 dl {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-#strea main .streaSec01 .streaTextwrap2 dl dt {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 dl dt {
     flex-basis: 20%;
 }
 
-#strea main .streaSec01 .streaTextwrap2 dl dd {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 dl dd {
     flex-basis: 70%;
 }
 
-#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 .colorBoxwrap {
     display: flex;
     gap: 2rem;
 }
 
-#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox1 {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 .colorBoxwrap .colorBox1 {
     width: 50px;
     height: 50px;
     background-color: #FEF8F0;
 }
 
-#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox2 {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 .colorBoxwrap .colorBox2 {
     width: 50px;
     height: 50px;
     background-color: #142D51;
 }
 
-#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox3 {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 .colorBoxwrap .colorBox3 {
     width: 50px;
     height: 50px;
     background-color: #DE7E11;
 }
 
-#strea main .streaSec01 .streaTextwrap2 .colorBoxwrap .colorBox4 {
+#strea main .streaSec01 .streaTextwrapper .streaTextwrap2 .colorBoxwrap .colorBox4 {
     width: 50px;
     height: 50px;
     background-color: #885C31;
@@ -82,13 +82,13 @@
 
 /* ページ中央画像 */
 
-#strea main .streaSec01 .streaImg {
+/* #strea main .streaSec01 .streaImg {
     background-image: url(../../image/usagi_sento_01.png);
     aspect-ratio: 16/9;
     background-size: cover;
     margin-block: 3rem;
     border: 1px solid var(--mainColor);
-}
+} */
 
 /* ここからテキストエリア下 */
 
@@ -101,7 +101,7 @@
     display: flex;
     justify-content: space-around;
     padding: 3rem 0;
-    border-block: 1px solid var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
 }
 
 #strea main .streaSec01 .streaTextwrapper2 .streaText1 {
@@ -109,6 +109,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     padding: 3rem 0;
+    border-bottom: 1px solid var(--mainColor);
 }
 
 #strea main .streaSec01 .streaTextwrapper2 .streaText .streaImg1 img {
@@ -148,7 +149,7 @@
     padding-top: 5rem;
     margin-bottom: 5rem;
     text-align: center;
-    /* border-top: 1px solid var(--mainColor); */
+
 }
 
 @media screen and (max-width: 768px) {
@@ -172,52 +173,36 @@
 
     /* ここからテキストエリア上 */
 
-    #strea main .streaSec01 .streaTextwrapper {
-        margin-inline: 1rem;
-        padding-bottom: 3rem;
-        border-bottom: 1px solid var(--mainColor);
-    }
-
-
-    #strea main .streaSec01 .streaTextwrap2 {
+    #strea main .streaSec01 .streaTextwrapper .streaTextwrap2 {
         width: auto;
-        margin-inline: 2rem;
+        margin: 0 1.5rem
     }
 
-
-    #strea main .streaSec01 .streaTextwrap2 dl {
-        display: flex;
+    #strea main .streaSec01 .streaTextwrapper .streaTextwrap2 dl {
         flex-direction: column;
-        margin-bottom: 1rem;
-    }
-
-    #strea main .streaSec01 .streaTextwrap2 dl dt {
-        margin-bottom: 1rem;
-    }
-
-    #strea main .streaSec01 .streaTextwrap2 dl dd {
-        margin-bottom: 2rem;
+        gap: 1rem;
     }
 
     /* ここからテキストエリア下 */
 
-    #strea main .streaSec01 .streaTextwrap2 .streaText .streaImg1 img {
-        margin-bottom: 1rem;
-    }
-
-    #strea main .streaSec01 .streaTextwrap2 .streaText1 .streaImg1 img {
-        margin-bottom: 1rem;
-    }
-
-    #strea main .streaSec01 .streaTextwrap2 .streaText {
+    #strea main .streaSec01 .streaTextwrapper2 .streaText {
         flex-direction: column;
-        margin-inline: 1rem;
+        margin: 0 1rem;
     }
 
-    #strea main .streaSec01 .streaTextwrap2 .streaText1 {
+    #strea main .streaSec01 .streaTextwrapper2 .streaText1 {
         flex-direction: column;
-        margin-inline: 1rem;
+        margin: 0 1rem;
     }
+
+    #strea main .streaSec01 .streaTextwrapper2 .streaText dl {
+        width: auto;
+    }
+
+    #strea main .streaSec01 .streaTextwrapper2 .streaText1 dl {
+        width: auto;
+    }
+
 
     #strea main .backTop {
         font-size: 1.2rem;
