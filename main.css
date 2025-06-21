@@ -1,0 +1,612 @@
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-block: 13rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin: 1rem 0 13rem;
+    position: fixed;
+    top: 0;
+    right: 10%;
+    z-index: 1000;
+}
+
+header nav ul li {
+    padding: 0 1rem;
+    background-color: var(--mainColor);
+    color: var(--backGroundColor);
+    border: 1px solid var(--backGroundColor);
+    border-radius: 1rem;
+}
+
+header .header_name {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    line-height: 1.2;
+}
+
+header .header_name h1 {
+    font-size: 6rem;
+}
+
+header .header_name p {
+    font-size: 3rem;
+}
+
+/* ここからプロフィール */
+
+main .profileSec {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main .profileSec h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 3rem;
+}
+
+main .profileSec .profileWrap {
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* ここからプロフィール画像 */
+
+main .profileSec .profileWrap .profileImg {
+    flex-basis: 40%;
+    border: 1px solid var(--mainColor);
+}
+
+main .profileSec .profileWrap .profileImg .scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+main .profileSec .profileWrap .profileImg .scroll-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ここからプロフィールテキスト */
+
+
+main .profileSec .profileWrap .profileText {
+    flex-basis: 45%;
+}
+
+main .profileSec .profileWrap .profileText p {
+    line-height: 2.2;
+}
+
+main .profileSec .profileWrap .profileText p:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+main .profileSec .profileLink {
+    text-align: center;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+/* 矢印CSS */
+
+main .profileSec .arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main .profileSec .arrow::before,
+main .profileSec .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+
+main .profileSec .sample2-2::before {
+    width: 12px;
+    height: 2px;
+    background: var(--mainColor);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+main .profileSec .sample2-2::after {
+    left: 3px;
+    width: 8px;
+    height: 9px;
+    border-top: 2px solid var(--mainColor);
+    border-right: 2px solid var(--mainColor);
+}
+
+/* ここからワーク usagi*/
+
+main .workSec {
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+main .workSec h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 3rem;
+}
+
+main .workSec .usagiSec .workName ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+main .workSec .usagiSec .workName ul li {
+    padding: 0 1rem;
+    border: 1px solid var(--mainColor);
+    border-radius: 1rem;
+}
+
+main .workSec .usagiSec h4 {
+    font-size: 2rem;
+}
+
+main .workSec .usagiSec .workName2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+main .workSec .usagiSec .workName2 img {
+    margin: 0 auto;
+}
+
+main .workSec .usagiSec .workName2 img .scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+main .workSec .usagiSec .workName2 img .scroll-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main .workSec .usagiSec .workLink {
+    text-align: end;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+/* 矢印CSS */
+
+main .workSec .usagiSec .arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main .workSec .usagiSec .arrow::before,
+main .workSec .usagiSec .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+
+main .workSec .usagiSec .sample2-2::before {
+    width: 12px;
+    height: 2px;
+    background: var(--mainColor);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+main .workSec .usagiSec .sample2-2::after {
+    left: 3px;
+    width: 8px;
+    height: 10px;
+    border-top: 2px solid var(--mainColor);
+    border-right: 2px solid var(--mainColor);
+}
+
+/* ここからワークstrea */
+
+main .workSec .streaSec .workName {
+    margin-top: 5rem;
+}
+
+main .workSec .streaSec .workName ul {
+    display: flex;
+    gap: 1rem;
+}
+
+main .workSec .streaSec .workName ul li {
+    padding: 0 1rem;
+    border: 1px solid var(--mainColor);
+    border-radius: 1rem;
+}
+
+main .workSec .streaSec h4 {
+    font-size: 2rem;
+}
+
+main .workSec .streaSec p {
+    margin-bottom: 3rem;
+}
+
+main .workSec .streaSec .workLink {
+    text-align: end;
+    padding-block: 3rem;
+    border-bottom: 1px solid var(--mainColor);
+}
+
+/* 矢印CSS */
+
+main .workSec .streaSec .arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main .workSec .streaSec .arrow::before,
+main .workSec .streaSec .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+
+main .workSec .streaSec .sample2-2::before {
+    width: 12px;
+    height: 2px;
+    background: var(--mainColor);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+main .workSec .streaSec .sample2-2::after {
+    left: 3px;
+    width: 8px;
+    height: 10px;
+    border-top: 2px solid var(--mainColor);
+    border-right: 2px solid var(--mainColor);
+}
+
+/* スクロールしたら画像が下から表示される */
+
+.scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* h1タイプライターカーソルのスタイル */
+
+.typing::after {
+    content: '|';
+    animation: blink 0.7s step-start infinite;
+    margin-left: 2px;
+    color: currentColor;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ここからバナー */
+
+main .bannerWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--mainColor);
+    border-radius: 2rem;
+    padding-bottom: 5rem;
+}
+
+main .bannerWrapper h5 {
+    color: var(--backGroundColor);
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 4rem;
+    padding-top: 3rem;
+}
+
+main .bannerWrapper .bannerSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+
+main .bannerWrapper .bannerSec .bannerImgsec {
+    width: 400px;
+    padding: 1rem;
+    background-color: var(--backGroundColor);
+}
+
+main .bannerWrapper .bannerSec p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+main .bannerWrapper .bannerSec ul {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+main .bannerWrapper .bannerSec ul li {
+    padding: 0 0.5rem;
+    border: 1px solid var(--mainColor);
+    border-radius: 1rem;
+}
+
+main .bannerWrapper .bannerLink {
+    color: var(--backGroundColor);
+    text-align: center;
+    margin-top: 4rem;
+
+}
+
+/* 矢印CSS */
+
+main .bannerWrapper .bannerLink .arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main .bannerWrapper .bannerLink .arrow::before,
+main .bannerWrapper .bannerLink .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+
+main .bannerWrapper .bannerLink .sample2-2::before {
+    width: 12px;
+    height: 2px;
+    background: var(--backGroundColor);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+main .bannerWrapper .bannerLink .sample2-2::after {
+    left: 3px;
+    width: 8px;
+    height: 10px;
+    border-top: 2px solid var(--backGroundColor);
+    border-right: 2px solid var(--backGroundColor);
+}
+
+
+/* ここからフライヤー */
+
+
+/* ここからフッター */
+
+footer{
+    max-width: 850px;
+    margin: 5rem auto 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer small{
+    align-self: flex-end;
+}
+
+/* ここからメディアクエリ */
+
+@media screen and (max-width: 768px) {
+    header #drawerButton {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10000;
+    }
+
+    /* メニュートグルの基本スタイル */
+    header .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        gap: 24px;
+    }
+
+    header #drawerButton .bar {
+        height: 4px;
+        width: 30px;
+        background-color: var(--mainColor);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        margin-bottom: 5px;
+    }
+
+    header #drawerButton.reDesign .bar1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+    }
+
+    header #drawerButton.reDesign .bar2 {
+        opacity: 0;
+    }
+
+    header #drawerButton.reDesign .bar3 {
+        transform: rotate(-45deg);
+        position: relative;
+        bottom: 9px;
+    }
+
+    header nav ul {
+        width: 100px;
+        height: 200px;
+        position: fixed;
+        top: -110%;
+        right: 1rem;
+        /* background-color: var(--mainColor); */
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 1rem;
+        z-index: 1000;
+    }
+
+    header nav ul.open {
+        top: 0;
+    }
+
+    /* ハンバーガーメニューはここまで */
+
+    header {
+        max-width: 320px;
+        margin: 0 auto;
+        padding-block: 13rem;
+        border-bottom: 1px solid var(--mainColor);
+    }
+
+    header .header_name h1 {
+        font-size: 3rem;
+    }
+
+    header .header_name p {
+        font-size: 1.5rem;
+    }
+
+    /* ヘッダーここまで */
+
+    main .profileSec h2 {
+        font-size: 1.5rem;
+    }
+
+    main .profileSec .profileWrap {
+        margin: 0 auto 5rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .profileSec .profileWrap .profileImg {
+        width: 250px;
+    }
+
+    main .profileSec .profileWrap .profileText {
+        width: 250px;
+    }
+
+    main .profileSec .profileWrap .profileText p {
+        line-height: 2;
+    }
+
+    main .profileSec .profileLink {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    /* プロフィールここまで */
+
+    main .workSec {
+        max-width: 320px;
+    }
+
+    main .workSec h3 {
+        font-size: 1.8rem;
+        margin-block: 3rem;
+    }
+
+    main .workSec .usagiSec .workName ul {
+        gap: 0.5rem;
+    }
+
+    main .workSec .usagiSec .workName2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    /* ここまで銭湯 */
+
+    main .workSec .streaSec .workName ul {
+        gap: 0.5rem;
+    }
+
+    main .workSec .streaSec p {
+        font-size: 0.9rem;
+    }
+
+    /* ここからバナー */
+
+    main .bannerWrapper {
+        margin: 0 1rem;
+    }
+
+    main .bannerWrapper .bannerSec .bannerImgsec {
+        width: 300px;
+        margin: 0 1rem;
+    }
+
+    /* ここからフッター */
+
+    footer{
+        margin: 4rem 2rem 2rem;
+    }
+
+
+}
